@@ -133,3 +133,18 @@ header > h1 {
     font-weight: bold;
     margin-top: 30px;
 }
+
+.green-glow {
+    border:  4px solid rgb(42, 221, 42);
+    box-shadow: 0 0 10px rgb(1, 109, 1);
+}
+
+.red-glow {
+    border:  4px solid rgb(219, 13, 13);
+    box-shadow: 0 0 10px rgb(170, 6, 6);
+}
+
+.grey-glow {
+    border:  4px solid rgb(99, 100, 99);
+    box-shadow: 0 0 10px rgb(66, 66, 66);
+}
