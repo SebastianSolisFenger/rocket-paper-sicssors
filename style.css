@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 header > h1 {
@@ -75,23 +76,40 @@ header > h1 {
 }
 
 .choices{
- display: flex;
+    text-align: center;
+    margin-top: 50px;
+
+    /* /////  BELOW IS HOW I CODED IT AND IT WORKED     ////// */
+
+ /* display: flex;
  justify-content: center;
- align-items: center ;
+ align-items: center ; */
+
+     /* /////  ABOVE IS HOW I CODED IT AND IT WORKED THE SAME    ////// */
 }
 
 .choice {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
+    display: inline-block;
     border: 4px solid white;
+    border-radius: 50%;
+    padding: 10px ;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+
+    /* /////  BELOW IS HOW I CODED IT AND IT WORKED     ////// */
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* border: 4px solid white;
     border-radius: 50px;
     margin-top: 30px;
     margin-right: 40px;
     margin-left: 40px;
     width: 115px;
-    height: 100%;
+    height: 100%; */ 
+
+         /* /////  ABOVE IS HOW I CODED IT AND IT WORKED THE SAME    ////// */
 }
 
 .choice > img {
@@ -101,3 +119,17 @@ header > h1 {
   /* height: auto; */
 }
 
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(12, 12, 12);
+}
+
+
+#action-message {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
